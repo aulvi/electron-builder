@@ -57,7 +57,7 @@ Here documented only `electron-builder` specific options:
 | extraResources | <a name="BuildMetadata-extraResources"></a><p>A [glob expression](https://www.npmjs.com/package/glob#glob-primer), when specified, copy the file or directory with matching names directly into the app’s directory (<code>Contents/Resources</code> for OS X).</p> <p>You can use <code>${os}</code> (expanded to osx, linux or win according to current platform) and <code>${arch}</code> in the pattern.</p> <p>If directory matched, all contents are copied. So, you can just specify <code>foo</code> to copy <code>&lt;project_dir&gt;/foo</code> directory.</p> <p>May be specified in the platform options (i.e. in the <code>build.osx</code>).</p>
 | osx | <a name="BuildMetadata-osx"></a>See [.build.osx](#OsXBuildOptions).
 | mas | <a name="BuildMetadata-mas"></a>See [.build.mas](#MasBuildOptions).
-| win | <a name="BuildMetadata-win"></a>See [.build.win](#LinuxBuildOptions).
+| win | <a name="BuildMetadata-win"></a>See [.build.win](#WinBuildOptions).
 | linux | <a name="BuildMetadata-linux"></a>See [.build.linux](#LinuxBuildOptions).
 | compression | <a name="BuildMetadata-compression"></a>The compression level, one of `store`, `normal`, `maximum` (default: `normal`). If you want to rapidly test build, `store` can reduce build time significantly.
 | afterPack | <a name="BuildMetadata-afterPack"></a>*programmatic API only* The function to be run after pack (but before pack into distributable format and sign). Promise must be returned.
